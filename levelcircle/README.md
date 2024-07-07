@@ -34,34 +34,38 @@ class Example(App):
 Example().run()
 ```
 Output:
-![[imgs/img2.png]]
+
+![](./imgs/img2.png)
 
 
 ## Description
 
-![[imgs/img1.png]]
+![](imgs/img1.png)
 ### PrimaryLabel
 ```python
-​￼LevelCircle:
+​LevelCircle:
 	level: 60
-	​￼PrimaryLabel:
+	​PrimaryLabel:
 		text: "60%"
 		color: "black"
 ```
 Output:
-![[imgs/img3.png]]
+
+![](imgs/img3.png)
 ### SecondaryLabel
 ```python
-​￼LevelCircle:
+​LevelCircle:
 	level: 60
-	​￼PrimaryLabel:
+	​PrimaryLabel:
 		text: "60%"
 		color: "black"
-	​￼SecondaryLabel:
+	​SecondaryLabel:
 		text: "20.0 L/min"
 		color: "black"
 ```
-![[imgs/img4.png]]
+Output:
+
+![](imgs/img4.png)
 
 #### Complete code example:
 ```python
