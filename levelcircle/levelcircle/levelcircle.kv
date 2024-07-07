@@ -1,0 +1,45 @@
+
+<LevelCircle>
+    size_hint: 1, None
+    height: self.width
+    orientation: 'vertical'
+    canvas:
+        # Circunferencia gris de fondo
+        Color:
+            rgb: self.bg_level_color
+        Ellipse:
+            pos: 0, 0
+            size: self.size
+        # Ángulo oscuro que no se completará el nivel del tanque.
+        Color:
+            rgb: self.level_stop_color
+        Ellipse:
+            angle_start: root.level_stop*3.6
+            angle_end: 360
+            pos: 0, 0
+            size: self.size
+        # Ángulo del nivel del tanque
+        Color:
+            rgb: self.level_color
+        Ellipse:
+            angle_start: 0
+            angle_end: root.level*3.6
+            pos: 0, 0
+            size: self.size
+        # Fondo del centro del círculo blanco
+        Color:
+            rgb: self.bg_color
+        Ellipse:
+            pos: self.width_line, self.width_line
+            size: self.size[0]-self.width_line*2, self.size[1]-self.width_line*2
+
+
+
+<PrimaryLabel>
+    pos_hint: {'center_x': 0.5,'center_y': 0.5}
+    font_size: "85sp"
+
+
+<SecondaryLabel>
+    pos_hint: {'center_x': 0.5}
+    font_size: "35sp"
